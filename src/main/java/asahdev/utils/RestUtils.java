@@ -1,12 +1,14 @@
-package utils;
+package asahdev.utils;
 
-
+/**
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
+**/
 
 public class RestUtils {
 
+/**
     public static Object get(String url, Class objectClass){
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(url, objectClass);
@@ -26,4 +28,6 @@ public class RestUtils {
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.delete(url);
     }
+    **/
+
 }

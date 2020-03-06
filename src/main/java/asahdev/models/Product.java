@@ -1,4 +1,4 @@
-package models;
+package asahdev.models;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;

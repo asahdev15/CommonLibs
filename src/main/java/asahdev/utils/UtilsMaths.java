@@ -1,4 +1,4 @@
-package utils;
+package asahdev.utils;
 
 public class UtilsMaths {
 

@@ -1,4 +1,4 @@
-package utils;
+package asahdev.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jdk.nashorn.internal.ir.debug.ObjectSizeCalculator;

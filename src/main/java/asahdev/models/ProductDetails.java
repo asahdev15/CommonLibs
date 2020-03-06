@@ -1,4 +1,4 @@
-package models;
+package asahdev.models;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package utils;
+package asahdev.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -19,10 +19,7 @@ public class JsonUtils {
     public static String convertToJson(Object value){
         ObjectMapper Obj = new ObjectMapper();
         try {
-            // get Oraganisation object as a json string
-            String jsonStr = Obj.writeValueAsString(value);
-            // Displaying JSON String
-            return jsonStr;
+            return Obj.writeValueAsString(value);
         }
         catch (IOException e) {
             e.printStackTrace();
