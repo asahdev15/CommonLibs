@@ -1,6 +1,5 @@
 package asahdev.utils;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import jdk.nashorn.internal.ir.debug.ObjectSizeCalculator;
 
 import java.io.File;
@@ -8,7 +7,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.Scanner;
 
-public class TestUtils{
+public class FileUtils {
 
     public static void main(String[] args){
         System.out.println(new Date(1573184555455L));
@@ -19,13 +18,6 @@ public class TestUtils{
         System.out.println(objSize);
         return objSize;
     }
-
-   public static <T> T readObject(Class<T> classType, String resourceName) throws Exception
-   {
-      ObjectMapper mapper = new ObjectMapper();
-      T object = mapper.readValue(getFile(resourceName), classType);
-      return object;
-   }
 
    public static String readFile(String fileName) {
       StringBuilder result = new StringBuilder("");
@@ -43,7 +35,7 @@ public class TestUtils{
     }
 
    public static File getFile(String fileName) {
-      ClassLoader classLoader = TestUtils.class.getClassLoader();
+      ClassLoader classLoader = FileUtils.class.getClassLoader();
       File file = new File(classLoader.getResource(fileName).getFile());
       return file;
    }
